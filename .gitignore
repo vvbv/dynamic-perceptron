@@ -31,3 +31,6 @@
 *.out
 *.app
 dynamic_perceptron
+
+# NDP's
+swap_area/*.ndp
