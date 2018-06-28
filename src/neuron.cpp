@@ -35,7 +35,7 @@ long double Neuron::evaluate_input( vector < long double > input ){
 };
 
 void Neuron::write_output( long double output_value ){
-    string output_file_location = "swap_area/" + this->NEURON_CODENAME + ".ndp";
+    string output_file_location = "swap_area/OUTPUT_" + this->NEURON_CODENAME + ".ndp";
     ofstream outpur_file;
     outpur_file.open ( output_file_location );
     outpur_file << "#OUTPUT VALUE\n";
