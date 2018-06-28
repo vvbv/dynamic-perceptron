@@ -1,1 +1,1 @@
-# dynamic-perceptron
+# Dynamic Perceptron
