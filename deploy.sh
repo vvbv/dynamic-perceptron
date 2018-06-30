@@ -12,6 +12,7 @@ cp -r ../include ../deploy_area
 cp -r ../src ../deploy_area
 cp -r ../$1 ../deploy_area/neurons.conf
 cp -r ../$2 ../deploy_area/structure.conf
+cp -r ../$3 ../deploy_area/input.txt
 
 NEURAL_NETWORK_STRUCTURE_FILE='structure.conf'
 filename="neurons.conf"
