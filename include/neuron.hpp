@@ -5,6 +5,7 @@
     #include <vector>
     #include <string>
     #include <fstream>
+    #include <cstring>
 
     using std::abs;
     using std::vector;
@@ -12,6 +13,8 @@
     using std::ifstream;
     using std::ofstream;
     using std::to_string;
+    using std::getline;
+    using std::strtok;
 
     class Neuron{
 
@@ -27,6 +30,8 @@
             long double fast_sigmoid( long double value );
             long double evaluate_input( vector < long double > input );
             void write_output( long double output_value );
+
+            vector<string> string_tok( string line, char spliter );
 
         public:
             Neuron();
