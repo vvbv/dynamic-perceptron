@@ -34,3 +34,4 @@ dynamic_perceptron
 
 # NDP's
 swap_area/*.ndp
+deploy_area/
