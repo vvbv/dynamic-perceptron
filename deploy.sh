@@ -2,12 +2,8 @@
 
 mkdir deploy_area
 cd deploy_area
+rm -R ../deploy_area/*
 mkdir swap_area
-
-rm -R include
-rm -R src
-rm -R examples
-rm -R swap_area/*.ndp
 
 cp -r ../include ../deploy_area
 cp -r ../src ../deploy_area
@@ -26,7 +22,7 @@ sed -i -e 's/this->layer_number = 0;/this->layer_number = '$LAYER_NUMBER';/g' sr
 rm dynamic_perceptron
 clear
 
-g++ -g --std=c++11 src/*.cpp -I include/ -o dynamic_perceptron
-./dynamic_perceptron
+g++ -g --std=c++11 src/*.cpp -I include/ -o $NEURON_CODENAME
+./$NEURON_CODENAME
 
 echo "dynamic_perceptron [ exit code:" $? "]"
