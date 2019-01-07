@@ -2,6 +2,7 @@
 #define MAIN_HPP_
 
     #include <iostream>
+    #include <string>
 
     using std::cout;
     using std::endl;
