@@ -6,6 +6,7 @@
     #include <string>
     #include <fstream>
     #include <cstring>
+    #include <iostream>
 
     using std::abs;
     using std::vector;
@@ -15,6 +16,8 @@
     using std::to_string;
     using std::getline;
     using std::strtok;
+    using std::cout;
+    using std::endl;
 
     class Neuron{
 
@@ -37,6 +40,7 @@
             Neuron();
             ~Neuron();
             void load_local_information();
+            void print();
 
     };
 

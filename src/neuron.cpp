@@ -80,3 +80,9 @@ vector<string> Neuron::string_tok( string line, char spliter ){
     to_return.push_back( tmp_line );
     return to_return;
 };
+
+void Neuron::print(){
+    cout << "CODENAME: " << this->NEURON_CODENAME << endl;
+    cout << "WEIGHT: " << this->weight << endl; 
+    cout << "LAYER NUMBER: " << this->layer_number << endl;
+};
