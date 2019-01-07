@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 mkdir deploy_area
 cd deploy_area
